@@ -1,0 +1,137 @@
+/* utility.css */
+.u-list-none {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.u-list-none > li {
+  list-style: none;
+}
+.is-flipped {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease-out;
+}
+.is-visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* reset.css */
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+*,
+:before,
+:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+a:focus {
+  outline: none;
+}
+
+/* styles.css */
+:root {
+  --color-burgundy: rgb(155, 50, 110);
+  --color-offblack: rgb(33, 39, 33);
+  --color-teal: rgb(0, 96, 114);
+  --color-hover: rgb(57, 162, 141);
+  --color-shadow: rgba(0, 0, 0, 0.12);
+  --site-nav-height: 138px;
+}
+body {
+  background-color: rgb(221, 237, 229);
+  color: var(--color-offblack);
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.1;
+  text-rendering: optimizespeed;
+}
+
+/* site-nav-wrapper.css */
+site-nav-wrapper,
+::part(submenu-trigger) {
+  color: var(--color-teal);
+}
+site-nav-wrapper {
+  background-color: white;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.25);
+  display: block;
+  padding: 36px 36px 0 36px;
+  position: relative;
+}
+site-nav-wrapper a {
+  color: var(--color-teal);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* nav-list.css */
+nav-list li {
+  list-style-position: inside;
+}
+nav-list[type="ordered"] li {
+  font-weight: 900;
+}
+
+/* site-nav-submenu.css */
+site-nav-submenu nav-list {
+  border-left: 5px solid;
+  flex-grow: 1;
+}
+site-nav-submenu li {
+  padding-left: 12px;
+  padding-bottom: 24px;
+}
+site-nav-submenu li a:hover,
+site-nav-submenu li a:focus {
+  text-decoration: underline;
+}
+
+/* sitenav.css */
+.sitenav__top > li {
+  border-bottom: 5px solid transparent;
+  padding: 0 22px 0 22px;
+  text-align: center;
+}
+.sitenav__top > li:first-child {
+  padding-left: 0;
+}
+.sitenav__top > li:hover,
+.sitenav__top > li:focus {
+  border-bottom-color: var(--color-teal);
+}
+.sitenav__top > li.has-submenu {
+  padding-right: 0;
+}
+.sitenav__top > li > a {
+  display: block;
+  font-weight: 900;
+  padding-bottom: 36px;
+  text-align: center;
+}
+.sitenav__btn {
+  background-color: var(--color-burgundy);
+  color: white;
+  display: inline-block;
+  flex-grow: 1;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+}
+.sitenav__btn:hover,
+.sitenav__btn:focus {
+  background-color: var(--color-hover);
+}
