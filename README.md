@@ -16,10 +16,10 @@ We're interested in how you to respond to code at both a technical and team leve
 
 ### Advice
 
-- Please do not spend more than 60 minutes on this. This is an exercise, not a real review of code that may be pushed to production.
+- We ask that you do not spend more than 60 minutes on this. This is an exercise, not a real review of code that may be pushed to production.
+- Please focus your code review on what you know already and are comfortable with instead of researching things that are unknown to you.
 - In general, it is preferable to provide a list of concerns and go deep on 1-2 of those in terms of how you'd address them than to be truly exhausive in your list of concerns.
 - In terms of design, the expectation here is _not_ for this code to be pixel perfect. It's more important to cover the broad strokes of the design than to focus on pixel-specific differences among the existing feature, the screenshots and this PR.
-- Please focus your code review on what you know already and are comfortable with instead of researching things that are unknown to you.
 
 ## Context for the pull request
 
