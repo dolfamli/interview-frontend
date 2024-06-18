@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Interview - Frontend</title>
+</head>
+<!--
+ℹ️ This file is provided to make it possible to run this code locally in addition to the CodePen link.
+👉 Please do not review this file and instead review the markup in nav.html
+-->
+<body>
+<!-- nav.html start -->
+
+<!-- Rebuilding the site nav from WA State's PFML site in web components -->
+<!-- https://paidleave.wa.gov/ -->
+
+<site-nav-wrapper>
+    <nav-list class="u-list-none sitenav__top">
+      <li class="has-submenu">
+        <a href="#">Individuals and Families</a>
+      </li>
+      <site-nav-submenu>
+        <nav-list type="ordered">
+          <li><a href="individuals/one">Find out how paid leave works</a></li>
+          <li><a href="individuals/two">Before you apply</a></li>
+          <li><a href="individuals/apply">Apply now</a></li>
+          <li><a href="individuals/four">After you apply</a></li>
+          <li><a href="individuals/five">File your weekly claim</a></li>
+        </nav-list>
+        <nav-list class="u-list-none">
+          <li>More information about&hellip;</li>
+          <li>
+            <a href="individuals/estimating-weekly-pay">Estimating your weekly pay</a>
+          </li>
+          <li>
+            <a href="individuals/additional-resources">Additional resources for families</a>
+          </li>
+        </nav-list>
+        <a href="individuals/apply" class="sitenav__btn">Apply now/File claim</a>
+      </site-nav-submenu>
+      <li class="has-submenu"><a href="#">Employers</a></li>
+      <site-nav-submenu>
+        <nav-list type="ordered">
+          <li><a href="employers/paid-leave">How Paid Leave works</a></li>
+          <li>
+            <a href="employers/role-responsibilities">Employer role and responsibilities</a>
+          </li>
+          <li>
+            <a href="employers/estimate">Estimate your paid leave premium</a>
+          </li>
+          <li>
+            <a href="employers/quarterly-report">File your quarterly report and premiums</a>
+          </li>
+        </nav-list>
+        <nav-list class="u-list-none">
+          <li>More information about&hellip;</li>
+          <li>
+            <a href="employers/small-business">Small businesses: 150 employers or fewer</a>
+          </li>
+          <li><a href="employers/tribal">Tribal businesses</a></li>
+          <li><a href="employers/tpa">Employer agents</a></li>
+          <li><a href="employers/voluntary-plans">Voluntary plans</a></li>
+        </nav-list>
+        <a href="employers/login" class="sitenav__btn">Log in</a>
+      </site-nav-submenu>
+      <li><a href="#">Healthcare providers</a></li>
+    </nav-list>
+  </site-nav-wrapper>
+  
+<!-- nav.html end -->
+</body>
+
+<script src="components.js"></script>
+</html>
