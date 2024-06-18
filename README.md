@@ -14,6 +14,20 @@ We're interested in how you to respond to code at both a technical and team leve
 4. For the interview itself, please have all three files open in a code editor and be prepared to share your screen so we can discuss specific areas of the code.
   - Optional: If you have a CodePen account, it would also be fine to fork the CodePen example and share that (or copy the code to an equivalent service).
 
+### Running this code locally
+
+This is not required, but should you prefer to run the code locally, we're happy to provide some guidance and set up around that.
+
+ℹ️ These directions assume a macOS developer environment. If you are not using macOS and need additional assitance/guidance, please let us know.
+
+1. [Clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository) or [download](https://docs.github.com/en/repositories/working-with-files/using-files/downloading-source-code-archives#downloading-source-code-archives-from-the-repository-view) the code from GitHub.
+2. Using Terminal (or your preferred command line interface), navigate into the directory with these project files.
+3. Start a web server via: `python3 -m http.server`
+(If this doesn't work, try: `python -m http.server`)
+4. Using your preferred web browser, go to `http://0.0.0.0:8000` or `localhost:8000`.
+
+💡 Note that the `index.html` is provided only to enable loading this project locally. Please focus your code review on the markup as written in `nav.html`.
+
 ### Advice
 
 - We ask that you do not spend more than 60 minutes on this. This is an exercise, not a real review of code that may be pushed to production.
